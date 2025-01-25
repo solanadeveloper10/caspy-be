@@ -6,13 +6,13 @@ const fs = require('fs');
 const rateLimit = require('express-rate-limit');
 require('dotenv').config();
 
-const bot1Prompt = JSON.parse(fs.readFileSync('yelon.json', 'utf8'));
+const bot1Prompt = JSON.parse(fs.readFileSync('caspy.json', 'utf8'));
 
 const app = express();
 const PORT = 4000;
 const TOKEN = process.env.TOKEN;
 
-const allowedOrigins = ['https://yelon-ai.vercel.app', 'https://yelon.space'];
+const allowedOrigins = ['https://caspy-2.vercel.app', 'https://caspyai.xyz'];
 
 app.use(
    cors({
